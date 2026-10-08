@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "neshath.starship-hud",
+  "name": "Starship Flight HUD",
+  "version": "0.1.0",
+  "author": "Neshath",
+  "license": "MIT",
+  "description": "A Starship-inspired telemetry widget for the Omarchy bar with demo mission data.",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "StarshipHud.qml" },
+  "barWidget": {
+    "displayName": "Starship Flight HUD",
+    "description": "Mission timer, speed, altitude, and vehicle status in a cyan aerospace console style.",
+    "category": "Telemetry",
+    "allowMultiple": false,
+    "defaultSection": "center",
+    "defaults": {
+      "mission": "STARSHIP FLIGHT 14",
+      "speed": 26370,
+      "altitude": 276,
+      "showIcons": true
+    },
+    "schema": [
+      { "key": "mission", "type": "string", "label": "Mission name", "defaultValue": "STARSHIP FLIGHT 14" },
+      { "key": "speed", "type": "integer", "label": "Speed (km/h)", "min": 0, "max": 99999, "step": 10, "defaultValue": 26370 },
+      { "key": "altitude", "type": "integer", "label": "Altitude (km)", "min": 0, "max": 999, "step": 1, "defaultValue": 276 },
+      { "key": "showIcons", "type": "boolean", "label": "Show status icons", "defaultValue": true }
+    ]
+  }
+}
