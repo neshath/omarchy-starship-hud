@@ -3,7 +3,7 @@
   "id": "neshath.starship-hud",
   "name": "Starship Flight HUD",
   "version": "0.2.0",
-  "author": "Neshath",
+  "author": "neshath",
   "license": "MIT",
   "description": "A Starship-inspired telemetry widget for the Omarchy bar with local CPU, RAM, temperature, uptime, and network stats.",
   "kinds": ["service", "bar-widget"],

@@ -105,7 +105,7 @@ Start from the current HUD repository and change the entry point to a full bar:
   "id": "neshath.starship-bar",
   "name": "Starship Mission Console",
   "version": "0.2.0",
-  "author": "Neshath",
+  "author": "neshath",
   "license": "MIT",
   "description": "A full-width Starship-inspired replacement bar for Omarchy.",
   "kinds": ["bar"],
