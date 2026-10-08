@@ -4,6 +4,30 @@ A compact Quickshell bar widget that turns the Omarchy bar into a Starship-inspi
 
 ## Install
 
+### Complete Starship desktop in one command
+
+The theme and executable HUD are separate Omarchy package types, but this repository includes a wrapper that installs and configures both:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/neshath/omarchy-starship-hud/master/install-starship.sh | bash
+```
+
+The wrapper installs the visual theme, adds and enables the HUD plugin, moves the Omarchy bar to the bottom, and places the HUD in the center section.
+
+To install a reusable `omarchy-install-starship` command instead:
+
+```bash
+mkdir -p ~/.local/bin
+curl -fsSL https://raw.githubusercontent.com/neshath/omarchy-starship-hud/master/install-starship.sh \
+  -o ~/.local/bin/omarchy-install-starship
+chmod +x ~/.local/bin/omarchy-install-starship
+omarchy-install-starship
+```
+
+Ensure `~/.local/bin` is on your `PATH`.
+
+### Manual installation
+
 ```bash
 omarchy plugin add https://github.com/neshath/omarchy-starship-hud.git --enable --yes
 omarchy bar position bottom
