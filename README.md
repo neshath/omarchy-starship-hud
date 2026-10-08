@@ -55,7 +55,7 @@ The service performs no network requests, installs no packages, invokes no sudo 
 The service also exposes a small IPC status payload through the plugin target:
 
 ```bash
-omarchy-shell shell call neshath.starship-hud status
+omarchy-shell shell call neshath.starship-hud status '{}'
 ```
 
 Availability of the shell IPC wrapper varies by Omarchy version; the HUD itself does not depend on this command.
